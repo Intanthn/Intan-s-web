@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05040b" />
+    <title>Personal Web</title>
+    <meta
+      name="description"
+      content="Personal website modern futuristik tema black-pink."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#home">Skip to content</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+    </div>
+
+    <header class="header" data-elevate>
+      <div class="container header__inner">
+        <a class="brand" href="#home" aria-label="Ke Home">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">INTAN's Web</span>
+        </a>
+
+        <nav class="nav" aria-label="Navigasi utama">
+          <button class="nav__toggle" type="button" data-nav-toggle>
+            <span class="nav__toggleIcon" aria-hidden="true"></span>
+            <span class="srOnly">Toggle menu</span>
+          </button>
+          <div class="nav__panel" data-nav-panel>
+            <a class="nav__link" href="#home" data-nav-link>Home</a>
+            <a class="nav__link" href="#about" data-nav-link>About</a>
+            <a class="nav__link" href="#achievements" data-nav-link
+              >Achievements</a
+            >
+            <a class="nav__link" href="#skills" data-nav-link>Interests</a>
+            <a class="nav__link" href="#favorites" data-nav-link>Favorites</a>
+            <a class="nav__link" href="#gallery" data-nav-link>Gallery</a>
+            <a class="nav__link" href="#contact" data-nav-link>Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <h1 class="hero__title reveal">
+              <span class="hero__titleLine">Hi, I’m</span>
+              <span class="hero__nameWrap">
+                <span class="hero__name" data-profile-name>INTAN PERTIWI</span>
+                <span class="hero__nameGhost hero__nameGhost--pink" aria-hidden="true"></span>
+                <span class="hero__nameGhost hero__nameGhost--violet" aria-hidden="true"></span>
+                <span class="hero__nameScan" aria-hidden="true"></span>
+              </span>
+            </h1>
+            <p class="hero__tagline reveal" data-profile-tagline>
+              A 17yo girl who enjoys learning and discovering new things
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#contact">Let’s Connect</a>
+              <a class="btn btn--ghost" href="#gallery">See Gallery</a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="portraitCard">
+              <div class="portraitCard__frame" aria-hidden="true"></div>
+              <img
+                class="portraitCard__img"
+                src="./assets/profile.jpg.jpeg"
+                alt="Foto profil"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2 reveal">About Me</h2>
+            <p class="sub">
+              My Short Biodata and Description
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card">
+              <h3 class="h3">Biodata</h3>
+              <dl class="biodata">
+                <div class="biodata__row">
+                  <dt>Nama</dt>
+                  <dd data-bio-name>INTAN PERTIWI</dd>
+                </div>
+                <div class="biodata__row">
+                  <dt>Domisili</dt>
+                  <dd data-bio-city>Lampung Selatan</dd>
+                </div>
+                <div class="biodata__row">
+                  <dt>Pendidikan</dt>
+                  <dd data-bio-edu>SMAN 1 Kalianda</dd>
+                </div>
+                <div class="biodata__row">
+                  <dt>Hobby</dt>
+                  <dd data-bio-interest>Reading</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="card">
+              <h3 class="h3">Description</h3>
+              <p class="p" data-about-desc>
+                Hai Precious people...</p>
+                I am someone who loves learning, exploring new ideas, and understanding the world from different perspectives. Through school activities, competitions, and personal projects, I continue to grow and discover my interests.
+              </p>
+              <p> Nice to meet youu, i'm Intan and this is a little space about me</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2 reveal">Achievements</h2>
+            <p class="sub">This is just a part, btw</p>
+          </div>
+
+          <div class="grid grid--3" data-achievements>
+            <article class="card card--lift">
+              <div class="badge">2025</div>
+              <h3 class="h3">1st Winner</h3>
+              <p class="p">OSN Geografi Tingkat Kab/Kota</p>
+            </article>
+            <article class="card card--lift">
+              <div class="badge">2025</div>
+              <h3 class="h3">2nd Winner</h3>
+              <p class="p">Local WORDS Competition</p>
+            </article>
+            <article class="card card--lift">
+              <div class="badge">2023</div>
+              <h3 class="h3">2nd Winner</h3>
+              <p class="p">KSM IPS Tingkat Kab/Kota </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2 reveal">I'm Enjoy With</h2>
+            <p class="sub">
+              instead call it with skills, i think it's better if call it with what i enjoy with
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <h3 class="h3">I enjoy learning about the world, like its places and the ideas that shape societies. I like reading, exploring new perspectives, and having thoughtful conversations that make me see things differently. Through school activities, competitions, and collaborative projects, I also enjoy expressing ideas, working with a team, and continuing to grow through each experience. I also have a small fascination with mythology, because the stories behind ancient beliefs often reflect how people once tried to understand the world.
+              
+              <div class="divider"></div>
+              <p class="p subtle">
+                and also i enjoy with trevelling and shopping xoxo
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="favorites" class="section">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2 reveal">Favorite Things</h2>
+            <p class="sub">
+              and this is my favorite
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <h3 class="h3">Favorite Song</h3>
+              <p class="p">
+                <a class="linkCard" data-fav-song href="https://open.spotify.com/playlist/4NfKhD3PU7KAacPUtGN1YV?si=IVabCpGDQDKJ9hYDL_OQKw"
+                  >One of My Playlist </a
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">Favorite YouTube Channel</h3>
+              <p class="p">
+                <a
+                  class="linkCard"
+                  data-fav-youtube
+                  href="https://www.youtube.com/@Thewizardliz"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Sister of all girls </a
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">Favorite Book</h3>
+              <p class="p">
+                <a class="linkCard" data-fav-book href="https://www.thesecret.tv/oreferrer"
+                  >Change Your Thoughts</a
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">Favorite Series</h3>
+              <p class="p">
+                <a class="linkCard" data-fav-movie href="https://www.harrypotter.com/ferrer"
+                  >SlytherinHolic</a
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">Favorite Girlband</h3>
+              <p class="p">
+                <a class="linkCard" data-fav-actor href="https://www.ygfamily.com/en/artists/blackpink/profile"
+                  >Blink</a
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">Favorite Color</h3>
+              <p class="p">
+                <a class="linkCard" data-fav-color href="https://id.pinterest.com/pin/1688918606919890/""
+                  >As a Soft Autumn Person</a
+                >
+              </p>
+            </article>
+            
+          </div>
+
+          <div class="quote card card--quote">
+            <div class="quote__mark" aria-hidden="true">“</div>
+            <p class="quote__text" data-fav-quote>
+             <big><h2>"Mea Vita, Mea Lux, Mea Anima" </h2></big>
+            </p>
+            <div class="quote__by" data-fav-quote-by>— My Life, My Light, My Soul </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2 reveal">Gallery</h2>
+            <p class="sub">
+              A few Photos i like
+            </p>
+          </div>
+
+          <div class="gallery" data-gallery>
+            <button class="galleryItem" type="button" data-src="./assets/gallery-1.jpg.jpg">
+              <img src="./assets/gallery-1.jpg.jpg" alt="Gallery photo 1" loading="lazy" />
+              <span class="galleryItem__overlay">
+                <span class="mono">OPEN</span>
+              </span>
+            </button>
+            <button class="galleryItem" type="button" data-src="./assets/gallery-2.jpg">
+              <img src="./assets/gallery-2.jpg" alt="Gallery photo 2" loading="lazy" />
+              <span class="galleryItem__overlay">
+                <span class="mono">OPEN</span>
+              </span>
+            </button>
+            <button class="galleryItem" type="button" data-src="./assets/gallery-3.jpg">
+              <img src="./assets/gallery-3.jpg" alt="Gallery photo 3" loading="lazy" />
+              <span class="galleryItem__overlay">
+                <span class="mono">OPEN</span>
+              </span>
+            </button>
+            <button class="galleryItem" type="button" data-src="./assets/gallery-4.jpg">
+              <img src="./assets/gallery-4.jpg" alt="Gallery photo 4" loading="lazy" />
+              <span class="galleryItem__overlay">
+                <span class="mono">OPEN</span>
+              </span>
+            </button>
+            <button class="galleryItem" type="button" data-src="./assets/gallery-5.jpg">
+              <img src="./assets/gallery-5.jpg" alt="Gallery photo 5" loading="lazy" />
+              <span class="galleryItem__overlay">
+                <span class="mono">OPEN</span>
+              </span>
+            </button>
+            <button class="galleryItem" type="button" data-src="./assets/gallery-6.jpg">
+              <img src="./assets/gallery-6.jpg" alt="Gallery photo 6" loading="lazy" />
+              <span class="galleryItem__overlay">
+                <span class="mono">OPEN</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="h2 reveal">Social Media & Contact</h2>
+            <p class="sub">Let’s be mutuals.</p>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card">
+              <h3 class="h3">Social</h3>
+              <div class="social">
+                <a class="social__item" href="https://www.instagram.com/intanthena/?hl=en"
+                  <span class="social__label">Instagram</span>
+                  <span class="mono">@intanthena</span>
+                </a>
+                <a class="social__item" href="https://www.tiktok.com/@intnthn?_r=1&_t=ZS-94bO4qbApiJ"
+                  <span class="social__label">TikTok</span>
+                  <span class="mono">@intanthn</span>
+                </a>
+                <a class="social__item" href="http://t.me/intanthn"target="_blank" rel="noreferrer">
+                  <span class="social__label">Telegram</span>
+                  <span class="mono">@intanthn</span>
+                </a>
+                <a class="social__item" href="mailto:intanperrtiwyy@gmail.com"target="_blank" rel="noreferrer">
+                  <span class="social__label">Email</span>
+                  <span class="mono">intanpertiwyy@gmail.com
+                </a>
+              </div>
+              <div class="divider"></div>
+              <p class="p subtle">
+                If there is something you want to say, feel free to contact me
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="h3">Contact</h3>
+              <form class="form" id="contactForm"
+                action="mailto:intanpertiwyy@gmail.com"
+                method="post" enctype="text/plain">
+                <label class="field">
+                  <span class="field__label">Nama</span>
+                  <input
+                    class="field__input"
+                    name="name"
+                    placeholder="Nama kamu"
+                    autocomplete="name"
+                    required
+                  />
+                </label>
+                <label class="field">
+                  <span class="field__label">Email</span>
+                  <input
+                    class="field__input"
+                    name="email"
+                    type="email"
+                    placeholder="nama@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+                <label class="field">
+                  <span class="field__label">Pesan</span>
+                  <textarea
+                    class="field__input field__input--area"
+                    name="message"
+                    placeholder="Tulis pesan..."
+                    rows="4"
+                    required
+                  ></textarea>
+                </label>
+                <button class="btn btn--primary" type="submit">
+                  Send (opens email)
+                </button>
+                <p class="p subtle" id="contactHint">
+                  i will see later
+                </p>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <span class="mono">©</span>
+          <span data-footer-name>INTAN PERTIWI</span>
+          <span class="mono">—</span>
+        </div>
+        <a class="footer__top" href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <dialog class="modal" data-modal>
+      <button class="modal__close" type="button" data-modal-close>
+        <span class="srOnly">Close</span>
+        <span aria-hidden="true">✕</span>
+      </button>
+      <img class="modal__img" alt="Preview" data-modal-img />
+      <div class="modal__hint mono">ESC to close</div>
+    </dialog>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
